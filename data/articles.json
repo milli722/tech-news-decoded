@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "id": "2026-11-15-ai-super-pac-midterms",
+    "title": "AI 業者砸 7,900 萬美元搶國會，期中選舉成績單出爐",
+    "category": "geopolitics",
+    "date": "2026-11-15",
+    "summary": "AI 政治資金首度大舉進場美國選舉，但多數押注沒有換到席次。",
+    "readMinutes": 5,
+    "url": "articles/2026-11-15-ai-super-pac-midterms.html",
+    "requested": true
+  },
+  {
+    "id": "2026-11-15-linux-tcp-cve-98432",
+    "title": "藏了近 11 年的 Linux 核心 9.8 分漏洞，AI 寫出遠端奪權攻擊",
+    "category": "security",
+    "date": "2026-11-15",
+    "summary": "Linux 核心漏洞可遠端奪權，AI 已寫出攻擊程式。",
+    "readMinutes": 5,
+    "url": "articles/2026-11-15-linux-tcp-cve-98432.html",
+    "requested": true
+  },
+  {
+    "id": "2026-11-15-openai-948-linux-flaws",
+    "title": "OpenAI 花 120 萬美元，讓 AI 一次挖出 948 個 Linux 漏洞",
+    "category": "ai",
+    "date": "2026-11-15",
+    "summary": "AI 自動找漏洞、寫攻擊、產修補，規模遠超人工。",
+    "readMinutes": 5,
+    "url": "articles/2026-11-15-openai-948-linux-flaws.html",
+    "requested": false
+  },
+  {
+    "id": "2026-11-15-tsmc-october-revenue-record",
+    "title": "台積電 10 月營收 5,869 億創新高，AI 需求還在加速",
+    "category": "semiconductor",
+    "date": "2026-11-15",
+    "summary": "台積電 10 月營收年增近六成，AI 晶片需求持續推升。",
+    "readMinutes": 4,
+    "url": "articles/2026-11-15-tsmc-october-revenue-record.html",
+    "requested": false
+  },
+  {
+    "id": "2026-11-15-cop31-antalya-climate-finance",
+    "title": "COP31 在土耳其登場，氣候資金之爭再起",
+    "category": "esg",
+    "date": "2026-11-15",
+    "summary": "COP31 開幕即爭錢，美國政府缺席氣候談判。",
+    "readMinutes": 4,
+    "url": "articles/2026-11-15-cop31-antalya-climate-finance.html",
+    "requested": false
+  }
+]

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenAI 花 120 萬美元，讓 AI 一次挖出 948 個 Linux 漏洞｜Tech Decoded</title>
+  <meta name="description" content="AI 自動找漏洞、寫攻擊、產修補，規模遠超人工。">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a class="logo" href="../index.html">Tech<span>Decoded</span></a>
+        <div class="header-actions">
+          <a href="../about.html">關於</a>
+          <button class="theme-toggle" type="button">深色</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="article">
+    <a class="back" href="../index.html">← 回首頁</a>
+
+    <div class="article-tag"><span class="tag tag-ai">AI</span></div>
+    <h1>OpenAI 花 120 萬美元，讓 AI 一次挖出 948 個 Linux 漏洞</h1>
+    <div class="meta">2026-11-15 · 5 分鐘閱讀</div>
+
+    <p class="tldr">AI 自動找漏洞、寫攻擊、產修補，規模遠超人工。</p>
+
+    <h2>新聞重點</h2>
+    <ul class="points">
+      <li>OpenAI 於 11 月 4 日公布研究：10 月中旬用一個尚未發布的資安專用模型，對 Linux 核心進行一次自動化掃描。</li>
+      <li>這套流程找出 2,308 個疑似漏洞，實際重現 1,724 個，最後整理出 948 個不同的「本機權限提升」漏洞，並為每一個產生修補建議，交由人工審查後通報。</li>
+      <li>整次掃描的 API 費用約 121 萬美元，平均一個漏洞不到 1,300 美元。</li>
+      <li>OpenAI 引用 Pwn2Own、TyphoonPWN 等駭客競賽過去對單一 Linux 提權漏洞 2 萬到 7 萬美元的獎金，估算這批漏洞價值約 1,890 萬到 6,630 萬美元。</li>
+      <li>同一套流程在 6 月只找到 24 個、7 月底找到 166 個，數量在幾個月內大幅成長。</li>
+    </ul>
+
+    <h2>背景知識</h2>
+    <div class="term-cards">
+      <div class="term">
+        <strong>本機權限提升（Local Privilege Escalation, LPE）</strong>
+        <p>攻擊者已經有一個普通帳號，例如透過釣魚或弱密碼進到系統，再利用漏洞把自己升級成最高權限的 root。它不像遠端漏洞那樣能從外部直接入侵，但常常是攻擊鏈中「從進門到全面控制」的關鍵一步。</p>
+      </div>
+      <div class="term">
+        <strong>概念驗證（Proof of Concept, PoC）</strong>
+        <p>證明漏洞真的可以被利用的示範程式。能寫出 PoC，代表漏洞不只是理論上存在，而是實際可被攻擊。</p>
+      </div>
+      <div class="term">
+        <strong>變體分析（Variant Analysis）</strong>
+        <p>找到一個漏洞後，再去搜尋程式碼中有沒有同樣模式的錯誤。OpenAI 的 1,169 個可用攻擊程式，就是透過變體分析合併成 948 個獨立漏洞。</p>
+      </div>
+    </div>
+
+    <h2>科技人解讀</h2>
+    <div class="analysis">
+      <h3>技術層面：找漏洞變成「花錢就能擴大規模」的工作</h3>
+      <p>過去找核心漏洞靠少數頂尖研究員，速度有限。這次 OpenAI 示範的是一條完整的自動化流水線：找漏洞、重現、寫攻擊程式、評估影響、產生修補，最後才由人審查。成本以 API 費用計算，代表只要預算夠，就可以平行擴大掃描規模。這也是 AI Agent 從「聊天」走向「自主完成複雜工作」的具體例子。</p>
+      <h3>資安層面：防守方與攻擊方都拿到了新武器</h3>
+      <p>同樣的能力，防守方可以用來大量修補，攻擊方也可能用來大量挖洞。這次研究的結論之一是：沒有修補的 Linux 系統，應該當作「低權限帳號等於 root」來看待。對企業來說，最小權限原則、帳號隔離、容器隔離這些基本防護，會變得更加重要。</p>
+      <h3>職涯層面：資安工程師的工作內容正在改變</h3>
+      <p>未來的資安人員可能不再需要一個一個手動找漏洞，而是負責設計、監督與驗證 AI 的工作成果，並處理大量 AI 回報的問題。會用 AI 工具、又能判斷結果正確與否的人，可能會更有競爭力。</p>
+    </div>
+
+    <h2>延伸思考</h2>
+    <ul class="points">
+      <li>AI 一次找出近千個漏洞，開源專案的維護者有足夠人力處理這麼多修補嗎？</li>
+      <li>如果 AI 找漏洞的成本持續下降，駭客競賽和漏洞獎金制度還有存在的意義嗎？</li>
+    </ul>
+
+    <h2>面試這樣問</h2>
+    <div class="interview">
+      <p class="q">Q：你覺得 AI 會取代資安工程師嗎？</p>
+      <ul>
+        <li>先肯定 AI 的能力：以 OpenAI 一次找出 948 個漏洞為例，說明規模與速度遠超人工</li>
+        <li>點出限制：流程最後仍需要人工審查，AI 的判斷也需要驗證</li>
+        <li>說明角色轉變：從「手動找漏洞」轉向「設計流程、監督 AI、做決策」</li>
+        <li>連結自己：打算如何培養 AI 工具與資安基礎知識的結合能力</li>
+      </ul>
+    </div>
+
+    <h2>原文來源</h2>
+    <ul class="sources">
+      <li>The Hacker News：<a href="https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html" target="_blank" rel="noopener">OpenAI AI pipeline generates 948 Linux LPE exploits</a></li>
+      <li>SecurityWeek：<a href="https://securityweek.com/ai-agents-got-root-on-linux-via-948-kernel-flaws-in-openai-research" target="_blank" rel="noopener">AI agents got root on Linux via 948 kernel flaws in OpenAI research</a></li>
+      <li>Phoronix：<a href="https://phoronix.com/news/OpenAI-948-Linux-LPE-Bugs" target="_blank" rel="noopener">OpenAI Finds 948 Local Privilege Escalation Bugs In The Linux Kernel</a></li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      Tech Decoded — 本文為自行整理撰寫，事實部分以原文來源為準。
+    </div>
+  </footer>
+</body>
+</html>
