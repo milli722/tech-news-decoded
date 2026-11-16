@@ -1,5 +1,55 @@
 [
   {
+    "id": "2026-11-16-nvidia-ceo-transition",
+    "title": "黃仁勳辭任輝達執行長，財務長暫代、本週照常公布財報",
+    "category": "semiconductor",
+    "date": "2026-11-16",
+    "summary": "輝達創辦人黃仁勳請辭，AI 晶片龍頭進入接班過渡期。",
+    "readMinutes": 5,
+    "url": "articles/2026-11-16-nvidia-ceo-transition.html",
+    "requested": false
+  },
+  {
+    "id": "2026-11-16-apec-shenzhen-trump-xi",
+    "title": "APEC 深圳峰會本週登場，美中領袖今年第三度會面",
+    "category": "geopolitics",
+    "date": "2026-11-16",
+    "summary": "APEC 深圳峰會登場，美中貿易休戰延長，科技議題成焦點。",
+    "readMinutes": 4,
+    "url": "articles/2026-11-16-apec-shenzhen-trump-xi.html",
+    "requested": false
+  },
+  {
+    "id": "2026-11-16-anthropic-ipo-roadshow",
+    "title": "Anthropic 啟動 IPO，最快本週在 Nasdaq 掛牌",
+    "category": "ai",
+    "date": "2026-11-16",
+    "summary": "Anthropic 啟動上市，估值逾一兆美元。",
+    "readMinutes": 5,
+    "url": "articles/2026-11-16-anthropic-ipo-roadshow.html",
+    "requested": false
+  },
+  {
+    "id": "2026-11-16-microsoft-patch-outlook-zero-day",
+    "title": "微軟一個月修補逾千個漏洞，Outlook 零時差已遭利用",
+    "category": "security",
+    "date": "2026-11-16",
+    "summary": "微軟連兩個月修補破千漏洞，Outlook 漏洞已被攻擊。",
+    "readMinutes": 4,
+    "url": "articles/2026-11-16-microsoft-patch-outlook-zero-day.html",
+    "requested": false
+  },
+  {
+    "id": "2026-11-16-cop31-week-two-adaptation",
+    "title": "COP31 進入部長級談判週，氣候調適資金缺口仍大",
+    "category": "esg",
+    "date": "2026-11-16",
+    "summary": "COP31 進入關鍵第二週，調適資金與電氣化成焦點。",
+    "readMinutes": 4,
+    "url": "articles/2026-11-16-cop31-week-two-adaptation.html",
+    "requested": false
+  },
+  {
     "id": "2026-11-15-ai-super-pac-midterms",
     "title": "AI 業者砸 7,900 萬美元搶國會，期中選舉成績單出爐",
     "category": "geopolitics",

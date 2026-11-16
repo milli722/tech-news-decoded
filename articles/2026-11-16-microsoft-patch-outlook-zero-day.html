@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>微軟一個月修補逾千個漏洞，Outlook 零時差已遭利用｜Tech Decoded</title>
+  <meta name="description" content="微軟連兩個月修補破千漏洞，Outlook 漏洞已被攻擊。">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a class="logo" href="../index.html">Tech<span>Decoded</span></a>
+        <div class="header-actions">
+          <a href="../about.html">關於</a>
+          <button class="theme-toggle" type="button">深色</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="article">
+    <a class="back" href="../index.html">← 回首頁</a>
+
+    <div class="article-tag"><span class="tag tag-security">資安</span></div>
+    <h1>微軟一個月修補逾千個漏洞，Outlook 零時差已遭利用</h1>
+    <div class="meta">2026-11-16 · 4 分鐘閱讀</div>
+
+    <p class="tldr">微軟連兩個月修補破千漏洞，Outlook 漏洞已被攻擊。</p>
+
+    <h2>新聞重點</h2>
+    <ul class="points">
+      <li>微軟於 11 月 10 日發布每月例行安全更新（Patch Tuesday），修補約 1,094 個漏洞，其中 63 個為重大（Critical）等級；這是連續第二個月修補超過一千個漏洞。</li>
+      <li>Outlook 漏洞 <code>CVE-2026-124194</code> 已遭攻擊者利用。攻擊者可寄送特製檔案，讓 Outlook 在沒有警告的情況下連線到外部位置，洩漏使用者的 NTLMv2 雜湊值。</li>
+      <li>這個漏洞的 CVSS 分數為 6.5（中等），但因為已被利用，美國 CISA 已列入已知遭利用漏洞清單，要求聯邦機關在 11 月 24 日前修補。</li>
+      <li>要修補 Outlook 漏洞，必須安裝 Office 的安全更新，只更新 Windows 不夠。另外 Windows Search 與 LDAP 也各有一個 9.8 分的遠端程式碼執行漏洞。</li>
+    </ul>
+
+    <h2>背景知識</h2>
+    <div class="term-cards">
+      <div class="term">
+        <strong>Patch Tuesday（每月例行更新）</strong>
+        <p>微軟固定在每月第二個星期二發布安全更新，讓企業 IT 人員可以預先排定時間測試和部署。這個做法也被其他廠商（如 Adobe、SAP）採用。</p>
+      </div>
+      <div class="term">
+        <strong>NTLM 雜湊（NTLM Hash）</strong>
+        <p>Windows 用來驗證身分的一種機制，密碼會被轉換成一串雜湊值。攻擊者取得雜湊後，可以嘗試破解出原始密碼，或直接拿雜湊冒充使用者登入其他系統。</p>
+      </div>
+      <div class="term">
+        <strong>CVSS 分數與實際風險</strong>
+        <p>CVSS 用 0 到 10 分評估漏洞嚴重程度，但分數只反映技術特性。一個中等分數的漏洞如果已經被攻擊者大量利用，實際風險可能比沒人利用的高分漏洞更高。</p>
+      </div>
+    </div>
+
+    <h2>科技人解讀</h2>
+    <div class="analysis">
+      <h3>資安層面：「修補量爆炸」可能成為新常態</h3>
+      <p>微軟連續兩個月修補超過一千個漏洞，10 月更達一千四百多個。這和本站先前報導的趨勢一致：AI 工具大幅提高了找漏洞的速度。對防守方來說，漏洞被發現是好事，但修補量暴增也代表 IT 團隊要在同樣的時間內測試和部署更多更新，工作負擔大幅增加。</p>
+      <h3>資安層面：分數不是唯一的排序依據</h3>
+      <p>這次被實際利用的是一個 6.5 分的中等漏洞，而不是 9.8 分的重大漏洞。這提醒我們，排定修補優先順序時，除了看 CVSS 分數，也要看漏洞是否已被利用、是否列入 CISA 清單，以及自家環境是否真的有用到受影響的產品。</p>
+      <h3>職涯層面：漏洞管理需要自動化能力</h3>
+      <p>每月上千個漏洞，不可能全靠人工判斷。企業需要能自動盤點資產、比對漏洞資料、排定優先順序的系統。會寫腳本串接 API、整理資料的資訊人，在資安維運團隊中會很有價值。</p>
+    </div>
+
+    <h2>延伸思考</h2>
+    <ul class="points">
+      <li>如果每個月要修補上千個漏洞，企業應該怎麼決定先修哪些？</li>
+      <li>AI 幫忙找到更多漏洞，最終會讓軟體更安全，還是讓防守方更疲於奔命？</li>
+    </ul>
+
+    <h2>面試這樣問</h2>
+    <div class="interview">
+      <p class="q">Q：如果你負責公司的漏洞管理，會怎麼排定修補優先順序？</p>
+      <ul>
+        <li>先做資產盤點：知道公司有哪些系統、版本</li>
+        <li>多個指標一起看：是否已遭利用、CVSS 分數、是否對外開放、影響範圍</li>
+        <li>舉例說明：這次 Outlook 漏洞分數不高，但已遭利用，應優先處理</li>
+        <li>提出自動化：用工具比對漏洞資料庫，減少人工判斷負擔</li>
+      </ul>
+    </div>
+
+    <h2>原文來源</h2>
+    <ul class="sources">
+      <li>SecurityWeek：<a href="https://securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft" target="_blank" rel="noopener">Exploited Outlook Zero-Day Among 1,094 Flaws Patched by Microsoft</a></li>
+      <li>CSO Online：<a href="https://www.csoonline.com/article/4247015/november-2026-patch-tuesday-63-critical-microsoft-fixes-plus-an-outlook-zero-day-that-allows-theft-of-hashed-credentials.html" target="_blank" rel="noopener">November 2026 Patch Tuesday: 63 critical Microsoft fixes plus an Outlook zero-day</a></li>
+      <li>iThome：<a href="https://www.ithome.com.tw/news/180422" target="_blank" rel="noopener">資安週報：微軟 11 月例行更新與 Outlook 零時差漏洞</a></li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      Tech Decoded — 本文為自行整理撰寫，事實部分以原文來源為準。
+    </div>
+  </footer>
+</body>
+</html>
