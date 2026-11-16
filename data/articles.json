@@ -1,5 +1,55 @@
 [
   {
+    "id": "2026-11-16-ai-supply-chain-declaration",
+    "title": "美國與八國簽署 AI 供應鏈保護宣言，德荷瑞與歐盟下週跟進",
+    "category": "geopolitics",
+    "date": "2026-11-16",
+    "summary": "美國與八國簽宣言，聯手保護 AI 供應鏈。",
+    "readMinutes": 4,
+    "url": "articles/2026-11-16-ai-supply-chain-declaration.html",
+    "requested": false
+  },
+  {
+    "id": "2026-11-16-tsmc-employee-data-leak",
+    "title": "台積電證實員工個資外洩，資料來自雲端服務商",
+    "category": "security",
+    "date": "2026-11-16",
+    "summary": "台積電員工個資經雲端業者外洩，第三方風險浮現。",
+    "readMinutes": 4,
+    "url": "articles/2026-11-16-tsmc-employee-data-leak.html",
+    "requested": false
+  },
+  {
+    "id": "2026-11-16-artex-ai-attack-framework",
+    "title": "開源 AI 攻擊框架 ARTEX 遭駭客大量濫用，攻擊進入自動化時代",
+    "category": "ai",
+    "date": "2026-11-16",
+    "summary": "開源 AI 攻擊框架遭濫用，攻擊進入自動化時代。",
+    "readMinutes": 5,
+    "url": "articles/2026-11-16-artex-ai-attack-framework.html",
+    "requested": false
+  },
+  {
+    "id": "2026-11-16-memory-cycle-debate",
+    "title": "記憶體多空交戰：外資喊「盈利懸崖」，法人估明年仍缺貨",
+    "category": "semiconductor",
+    "date": "2026-11-16",
+    "summary": "記憶體財報創高卻遭外資砍價，多空看法分歧。",
+    "readMinutes": 4,
+    "url": "articles/2026-11-16-memory-cycle-debate.html",
+    "requested": false
+  },
+  {
+    "id": "2026-11-16-edinburgh-data-centre-march",
+    "title": "愛丁堡數千人遊行反對 AI 資料中心，正逢 COP31 全球行動日",
+    "category": "esg",
+    "date": "2026-11-16",
+    "summary": "愛丁堡數千人遊行，反對 AI 資料中心擴張。",
+    "readMinutes": 4,
+    "url": "articles/2026-11-16-edinburgh-data-centre-march.html",
+    "requested": false
+  },
+  {
     "id": "2026-11-16-nvidia-ceo-transition",
     "title": "黃仁勳辭任輝達執行長，財務長暫代、本週照常公布財報",
     "category": "semiconductor",

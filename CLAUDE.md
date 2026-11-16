@@ -140,10 +140,12 @@
 |---|---|
 | 台灣綜合 | 中央社 CNA、公視新聞網 |
 | 台灣科技 | iThome、TechNews 科技新報、數位時代 |
-| 國際綜合 | Reuters、AP、BBC 中文 |
-| 國際科技 | The Verge、Ars Technica、TechCrunch、The Next Web、Phoronix（Linux／開源） |
-| 國際資安 | BleepingComputer、The Hacker News、SecurityWeek、CSO Online |
-| 財經／ESG | 經濟日報、工商時報、Bloomberg、Fortune、Axios、Reuters Sustainable Business |
+| 國際綜合 | Reuters、AP、BBC 中文、South China Morning Post、Anadolu Agency、Euronews |
+| 國際科技 | The Verge、Ars Technica、TechCrunch、The Next Web、Phoronix（Linux／開源）、Technobezz |
+| 國際資安 | BleepingComputer、The Hacker News、SecurityWeek、CSO Online、Infosecurity Magazine、ShiftDelete |
+| 財經／ESG | 經濟日報、工商時報、旺得富（中時）、Bloomberg、Fortune、Axios、Seeking Alpha、RTTNews、Reuters Sustainable Business |
+| 氣候／地方 | Earth Negotiations Bulletin（IISD）、To Vima、Edinburgh News |
+| 智庫 | ITIF |
 | 第一手來源 | 公司官方部落格／新聞稿、政府機關公告（如環境部、經濟部、數位發展部）、CVE / NVD 漏洞資料庫、各國選舉主管機關 |
 
 重大新聞盡量交叉比對 **2 個以上來源**。
@@ -154,7 +156,7 @@
 
 ### 流程 A：使用者說「更新今天的新聞」
 
-1. 搜尋**台灣時間過去 24 小時**內五個領域的新聞
+1. 搜尋**台灣時間過去 24 小時**內五個領域的新聞；**週一或連假後的第一天，範圍放寬到 72 小時**，並優先挑選本週還有後續發展的事件
 2. 挑出 **4～6 則**，挑選標準依序為：
    - 影響範圍大（大公司、大量使用者、國家政策）
    - 多家媒體都有報導（代表是熱門話題）
@@ -262,3 +264,4 @@
 - 2026-11-15：新增 ESG 永續、國際政經兩個分類；文章新增「面試這樣問」區塊；新增政治中立規則
 - 2026-11-15：新增 GitHub 權限規則（只能動本 repo、刪除前須詢問）
 - 2026-11-16：來源白名單新增國際資安媒體，以及 The Next Web、Phoronix、Fortune、Axios
+- 2026-11-16：白名單新增 SCMP、Anadolu、Euronews、Technobezz、Infosecurity Magazine、ShiftDelete、旺得富、Seeking Alpha、RTTNews、IISD ENB、To Vima、Edinburgh News、ITIF；流程 A 新增週一／連假後放寬到 72 小時

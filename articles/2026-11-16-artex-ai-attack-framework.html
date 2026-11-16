@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>開源 AI 攻擊框架 ARTEX 遭駭客大量濫用，攻擊進入自動化時代｜Tech Decoded</title>
+  <meta name="description" content="開源 AI 攻擊框架遭濫用，攻擊進入自動化時代。">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a class="logo" href="../index.html">Tech<span>Decoded</span></a>
+        <div class="header-actions">
+          <a href="../about.html">關於</a>
+          <button class="theme-toggle" type="button">深色</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="article">
+    <a class="back" href="../index.html">← 回首頁</a>
+
+    <div class="article-tag"><span class="tag tag-ai">AI</span></div>
+    <h1>開源 AI 攻擊框架 ARTEX 遭駭客大量濫用，攻擊進入自動化時代</h1>
+    <div class="meta">2026-11-16 · 5 分鐘閱讀</div>
+
+    <p class="tldr">開源 AI 攻擊框架遭濫用，攻擊進入自動化時代。</p>
+
+    <h2>新聞重點</h2>
+    <ul class="points">
+      <li>ARTEX 是今年 7 月由開發者「Autumn-27」在 GitHub 公開的 AI 滲透測試框架，透過多個 AI 代理自動執行入侵任務；原作者 10 月因濫用問題下架專案，但分支版本仍在流傳。</li>
+      <li>CrowdStrike 指出，中國相關駭客組織 VAPOR PANDA 自 10 月 17 日起的 11 天內，用 ARTEX 鎖定全球 200 多個組織，遍及至少 14 個國家，其中 9 個組織確認遭到入侵後的進一步行動。</li>
+      <li>微軟 10 月的報告指出，另一個組織 Storm-0940 也用 ARTEX 自動化攻擊數百個組織，部分案例不到 3 小時就取得雲端高權限。</li>
+      <li>資安公司 Censys 發現，ARTEX 的實際使用規模遠超過目前已公開的攻擊事件；TechCrunch 也報導有數百個 ARTEX 執行個體直接暴露在網路上。</li>
+    </ul>
+
+    <h2>背景知識</h2>
+    <div class="term-cards">
+      <div class="term">
+        <strong>滲透測試（Penetration Testing）</strong>
+        <p>企業委託資安人員，在授權範圍內模擬駭客攻擊自家系統，找出弱點並修補。工具本身是合法的，但落入攻擊者手中就成了武器。</p>
+      </div>
+      <div class="term">
+        <strong>AI 代理（AI Agent）</strong>
+        <p>能自主規劃步驟、使用工具、根據結果調整下一步的 AI 系統。ARTEX 把偵察、入侵、橫向移動等攻擊步驟交給多個 AI 代理分工執行，人只需要在關鍵時刻做決定。</p>
+      </div>
+      <div class="term">
+        <strong>SAML</strong>
+        <p>企業常用的單一登入（SSO）標準，讓使用者登入一次就能使用多個系統。如果系統沒有正確驗證 SAML 的簽章，攻擊者就可能偽造身分登入。</p>
+      </div>
+    </div>
+
+    <h2>科技人解讀</h2>
+    <div class="analysis">
+      <h3>技術層面：攻擊者用的仍是老漏洞</h3>
+      <p>從已公開的案例來看，ARTEX 利用的多半不是高深的新漏洞，而是常見的管理疏失：2022 年匯出後從未更換的金鑰、沒驗證簽章的 SAML 登入、弱密碼和缺少多因素驗證。AI 沒有發明新的攻擊手法，而是讓攻擊者能同時、快速地對大量目標嘗試這些老方法。</p>
+      <h3>資安層面：防守方要能偵測「機器速度」的攻擊</h3>
+      <p>報告指出，ARTEX 的 AI 代理會檢查目標電腦有沒有安裝特定資安軟體，也會在短時間內連續執行大量指令。防守方的建議包括：定期輪換憑證、檢查端點防護是否全面覆蓋、留意密集且有規律的登入嘗試。換句話說，基本功做好，就能擋下大部分自動化攻擊。</p>
+      <h3>AI 層面：開源工具的雙面刃</h3>
+      <p>ARTEX 原本是為合法滲透測試設計的開源專案，作者下架後，分支版本仍在流傳。這說明 AI 工具一旦公開就很難收回。開源能加速防守方的研究，也可能降低攻擊門檻，如何取得平衡是 AI 治理的難題。</p>
+    </div>
+
+    <h2>延伸思考</h2>
+    <ul class="points">
+      <li>像 ARTEX 這類可能被濫用的 AI 工具，應該開源嗎？開源的好處和風險要怎麼取捨？</li>
+      <li>如果攻擊越來越自動化，企業的資安團隊應該怎麼調整工作方式？</li>
+    </ul>
+
+    <h2>面試這樣問</h2>
+    <div class="interview">
+      <p class="q">Q：AI 對資安攻防帶來了什麼改變？</p>
+      <ul>
+        <li>攻擊端：AI 代理讓攻擊者能同時、快速地攻擊大量目標，例如 ARTEX</li>
+        <li>防守端：AI 也能用來找漏洞、自動化偵測，攻防都在加速</li>
+        <li>關鍵觀察：已知案例多半利用老問題，基本防護仍然有效</li>
+        <li>連結自己：資訊人可以從身分管理、日誌監控、自動化回應等方向切入</li>
+      </ul>
+    </div>
+
+    <h2>原文來源</h2>
+    <ul class="sources">
+      <li>CSO Online：<a href="https://www.csoonline.com/article/4243816/armed-with-ai-hackers-target-endpoint-security-blind-spots-raising-stakes-for-cisos.html" target="_blank" rel="noopener">Armed with AI, hackers target endpoint security blind spots, raising stakes for CISOs</a></li>
+      <li>BleepingComputer：<a href="https://bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs" target="_blank" rel="noopener">Chinese hackers use ARTEX AI in automated attacks against 200 orgs</a></li>
+      <li>Infosecurity Magazine：<a href="https://infosecurity-magazine.com/news/artex-activity-exceeds-reported" target="_blank" rel="noopener">ARTEX Offensive AI Tool Activity Far Exceeds Reported Campaigns, Censys Finds</a></li>
+      <li>TechCrunch：<a href="https://techcrunch.com/?p=3185905" target="_blank" rel="noopener">Hundreds of Artex AI hacking tools found publicly exposed to the web</a></li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      Tech Decoded — 本文為自行整理撰寫，事實部分以原文來源為準。
+    </div>
+  </footer>
+</body>
+</html>
