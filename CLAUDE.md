@@ -141,8 +141,9 @@
 | 台灣綜合 | 中央社 CNA、公視新聞網 |
 | 台灣科技 | iThome、TechNews 科技新報、數位時代 |
 | 國際綜合 | Reuters、AP、BBC 中文 |
-| 國際科技 | The Verge、Ars Technica、TechCrunch |
-| 財經／ESG | 經濟日報、工商時報、Bloomberg、Reuters Sustainable Business |
+| 國際科技 | The Verge、Ars Technica、TechCrunch、The Next Web、Phoronix（Linux／開源） |
+| 國際資安 | BleepingComputer、The Hacker News、SecurityWeek、CSO Online |
+| 財經／ESG | 經濟日報、工商時報、Bloomberg、Fortune、Axios、Reuters Sustainable Business |
 | 第一手來源 | 公司官方部落格／新聞稿、政府機關公告（如環境部、經濟部、數位發展部）、CVE / NVD 漏洞資料庫、各國選舉主管機關 |
 
 重大新聞盡量交叉比對 **2 個以上來源**。
@@ -260,3 +261,4 @@
 - 2026-11-15：建立第一版
 - 2026-11-15：新增 ESG 永續、國際政經兩個分類；文章新增「面試這樣問」區塊；新增政治中立規則
 - 2026-11-15：新增 GitHub 權限規則（只能動本 repo、刪除前須詢問）
+- 2026-11-16：來源白名單新增國際資安媒體，以及 The Next Web、Phoronix、Fortune、Axios
